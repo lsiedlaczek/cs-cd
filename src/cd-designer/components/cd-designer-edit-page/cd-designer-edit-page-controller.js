@@ -12,8 +12,7 @@ export default class CdDesignerEditPageController {
 
   constructor($log, $q, api, designer) {
     Object.assign(this, {$log, $q, api, designer});
-    $log.warn('its just temporary stuff');
-    console.log(designer);
+    console.log('designer edit page');
   }
 
   normalizeData(designer) {

@@ -9,9 +9,13 @@
  */
 export default function cdDesignerApiService() {
   return {
-    get: (id) => (
-    	{ name: 'designer page' }
-    );
+    get: (id) => {
+      console.log('get was called with id ' + id);
+      return { 
+        name: 'designer page', 
+        design: id 
+      };
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 'use strict';
 import angular from 'angular';
-import cdSettingsApi from 'app/cd-settings/components/cd-settings-api/cd-settings-api-module.js';
+import cdSettingsApi from 'cs-cd/cd-settings/components/cd-settings-api/cd-settings-api-module.js';
 
 /**
  * @ngdoc overview
@@ -17,7 +17,7 @@ export default angular
   ])
 
   .constant('cdSettings', {
-    path: 'app/cd-settings/components'
+    path: 'cd-settings/components'
   })
   .config(settingsEditRoutingConfig)
   
@@ -26,8 +26,8 @@ export default angular
  * @param $stateProvider
  */
 function settingsEditRoutingConfig($stateProvider, cdSettings) {
-  $stateProvider.state('cd.settings', {
-    url: '/settings',
+  $stateProvider.state('cd.settings.edit', {
+    url: '',
     inSidemenu: false,
     templateUrl: cdSettings.path + '/cd-settings-edit-page/cd-settings-edit-page.html',
     controller: 'CdSettingsEditPageController as settingsCtrl',
