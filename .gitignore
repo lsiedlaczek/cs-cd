@@ -1,0 +1,14 @@
+node_modules
+dist
+.tmp
+.sass-cache
+.idea
+src/vendor
+src/index.html
+src/styles/main.less
+src/styles/main.map
+rpm/
+i18n/template.pot
+/vendor
+*.mo
+test/karma.conf.js
